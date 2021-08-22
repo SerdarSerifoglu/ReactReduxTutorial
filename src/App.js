@@ -1,5 +1,6 @@
 import "./App.css";
 import { useSelector } from "react-redux";
+import NewComponent from "./NewComponent";
 
 function App() {
   const { objectItems } = useSelector((state) => state.object);
@@ -12,6 +13,7 @@ function App() {
           <h2>{objectItem.name}</h2>
         </div>
       ))}
+      <NewComponent></NewComponent>
     </div>
   );
 }
